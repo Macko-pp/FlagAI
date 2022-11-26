@@ -79,7 +79,7 @@ class GLMSeq2seqDataset(Dataset):
     def __getitem__(self, i):
         source_text = self.sents_src[i]
         target_text = self.sents_tgt[i]
-        data = self.tokenizer.encode_plus(source_text, target_text)
+        data = self.tokenizer.encode_plus(source_text=source_text, target_text=target_text)
 
         return data
 

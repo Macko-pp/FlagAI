@@ -20,15 +20,16 @@ trainer = Trainer(
     lr=1e-5,
     weight_decay=1e-5,
     epochs=10,
+    epochs=1,
     log_interval=10,
     eval_interval=10,
     load_dir=None,
     pytorch_device=device,
     save_dir="checkpoints_alm_title_generation",
     save_interval=200,
+    save_interval=1000,
     num_checkpoints=1,
 )
-
 traindata_dir = '/sharefs/baai-mrnd/xw/fork/data/datasets/wikilingual_dataset/train.tsv'
 valdata_dir = '/sharefs/baai-mrnd/xw/fork/data/datasets/wikilingual_dataset/valid.tsv'
 
